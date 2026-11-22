@@ -60,8 +60,8 @@ Two packages ship under the same release — pick the one that matches your game
 
 | Minecraft Java Edition | File / 文件 | `pack.mcmeta` |
 | --- | --- | --- |
-| 1.21.4 – 1.21.11 | `[1.21.4-1.21.11]easy_stew.zip` | `pack_format 61` + `supported_formats 61–94` |
-| 26.1 – 26.2 | `[26.1-26.2]easy_stew.zip` | `min_format 101` + `max_format [107,1]` |
+| 1.21.4 – 1.21.11 | `1.21.4-1.21.11-easy_stew.zip` | `pack_format 61` + `supported_formats 61–94` |
+| 26.1 – 26.2 | `26.1-26.2-easy_stew-1.1.zip` | `min_format 101` + `max_format [107,1]` |
 
 Why two files / 为什么要分两个包：
 
