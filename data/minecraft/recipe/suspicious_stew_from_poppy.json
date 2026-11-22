@@ -15,7 +15,8 @@
           "duration": 100,
           "id": "minecraft:night_vision"
         }
-      ]
+      ],
+      "minecraft:max_stack_size": 64
     },
     "count": 1,
     "id": "minecraft:suspicious_stew"

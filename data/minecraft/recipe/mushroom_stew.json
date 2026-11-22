@@ -8,6 +8,10 @@
   ],
   "result": {
     "count": 1,
-    "id": "minecraft:mushroom_stew"
+    "id": "minecraft:mushroom_stew",
+    "components": 
+    {
+      "minecraft:max_stack_size": 64
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
     "pack": {
-        "description": "Any two mushrooms can craft mushroom stew and suspicious stew.\n任意两个蘑菇即可合成蘑菇煲和谜之炖菜",
+        "description": "Any two mushrooms can craft mushroom stew and suspicious stew, and both now stack up to 64.\n任意两个蘑菇即可合成蘑菇煲和谜之炖菜，两者堆叠上限提升至 64。",
         "max_format": [94, 1],
         "min_format": 71,
         "pack_format": 71

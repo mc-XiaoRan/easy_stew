@@ -15,7 +15,8 @@
           "duration": 140,
           "id": "minecraft:nausea"
         }
-      ]
+      ],
+      "minecraft:max_stack_size": 64
     },
     "count": 1,
     "id": "minecraft:suspicious_stew"

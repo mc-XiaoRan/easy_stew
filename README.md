@@ -4,10 +4,10 @@
 ![Environment](https://img.shields.io/badge/environment-datapack-orange)
 ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
-Any two mushrooms can craft mushroom stew and suspicious stew.
-任意两个蘑菇即可合成蘑菇煲和谜之炖菜。
+Any two mushrooms can craft mushroom stew and suspicious stew, and both stews now stack up to 64.
+任意两个蘑菇即可合成蘑菇煲和谜之炖菜，两者堆叠上限提升至 64。
 
-[Modrinth](https://modrinth.com/datapack/easy_stew)
+[Modrinth](https://modrinth.com/datapack/easy_stew) · [Issues](https://github.com/mc-XiaoRan/easy_stew/issues)
 
 ---
 
@@ -19,6 +19,8 @@ Any two mushrooms can craft mushroom stew and suspicious stew.
 | 蘑菇煲 | 棕蘑菇、红蘑菇各 1 个 + 碗 | **任意 2 个蘑菇** + 碗 |
 | Suspicious stew / 谜之炖菜 | 1 red + 1 brown mushroom + bowl + flower | **any 2 mushrooms** + bowl + flower |
 | 谜之炖菜 | 棕蘑菇、红蘑菇各 1 个 + 碗 + 花 | **任意 2 个蘑菇** + 碗 + 花 |
+| Stack size / 堆叠上限 | 1 | **64** |
+| 堆叠上限 | 1 | **64** |
 
 `Any two mushrooms` means the pack reads the `#minecraft:mushrooms` item tag, so any two items in that tag work — red + red, brown + brown, or one of each.
 「任意 2 个蘑菇」指数据包读取 `#minecraft:mushrooms` 物品标签，标签内任意 2 个都能用——红+红、棕+棕，或各 1 个都可以。
@@ -76,6 +78,8 @@ The pack only overrides 17 vanilla recipe files and the `#minecraft:mushrooms` i
 
 ## Notes / 注意
 
+- Stew crafted before v1.1 keeps its old stack limit (1) and will not merge with the new stacks.
+- 1.1 之前合成的炖菜仍是原堆叠上限（1），不会与新堆叠合并。
 - Because the pack overrides `/data/minecraft/recipe/`, it will conflict with other packs that edit the same recipes.
 - 由于覆盖了 `/data/minecraft/recipe/`，会与其他修改同名配方的数据包冲突。
 
