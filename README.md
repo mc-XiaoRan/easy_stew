@@ -90,8 +90,6 @@ The pack only overrides vanilla recipe files and the `#minecraft:mushrooms` item
 
 - Stew crafted before v1.1 keeps its old stack limit (1) and will not merge with the new stacks.
 - 1.1 之前合成的炖菜仍是原堆叠上限（1），不会与新堆叠合并。
-- 1.21 – 1.21.1 and older are out of scope: there will be no further builds for them.
-- 1.21 – 1.21.1 及更早版本不在支持范围内，后续不会再出对应构建。
 - Because the pack overrides `/data/minecraft/recipe/`, it will conflict with other packs that edit the same recipes.
 - 由于覆盖了 `/data/minecraft/recipe/`，会与其他修改同名配方的数据包冲突。
 
