@@ -56,6 +56,11 @@ Suspicious stew keeps the vanilla effects, one flower per effect.
 
 ## Compatibility / 兼容性
 
+Supported range / 支持范围：**Minecraft Java Edition 1.21.2 – 26.2**。
+
+1.21 – 1.21.1 and every older version are **not supported**, and no builds will be released for them. Recipe ingredients there were still `{"item": "<id>"}` / `{"tag": "<id>"}` objects, and vanilla only shipped a single `crafting_special_suspiciousstew` recipe instead of the per-flower set, so the stack-size treatment cannot be applied cleanly.
+1.21 – 1.21.1 以及所有更早版本**不再支持**，也不会再为其发布构建。那时的配方 ingredient 还是 `{"item": "<id>"}` / `{"tag": "<id>"}` 对象写法，且原版只有一条 `crafting_special_suspiciousstew` 特殊配方、没有按花拆分的配方集，无法干净地套用本数据包的堆叠方案。
+
 Three packages ship under the same release — pick the one that matches your game version. They share the same recipe and tag structure; only the `pack.mcmeta` version declaration differs, plus the two eyeblossom recipes missing from the oldest package.
 同一个 Release 里有三个包，按游戏版本三选一。三者的配方与标签结构一致，差别只在 `pack.mcmeta` 的版本声明，以及最老那份少了两种眼眸花。
 
@@ -64,9 +69,6 @@ Three packages ship under the same release — pick the one that matches your ga
 | 1.21.2 – 1.21.3 | `1.21.2-1.21.3-easy_stew.zip` | `pack_format 57` + `supported_formats 57` | 15 |
 | 1.21.4 – 1.21.11 | `1.21.4-1.21.11-easy_stew.zip` | `pack_format 61` + `supported_formats 61–94` | 17 |
 | 26.1 – 26.2 | `26.1-26.2-easy_stew-1.1.zip` | `min_format 101` + `max_format [107,1]` | 18 |
-
-1.21 – 1.21.1 is not supported: recipe ingredients were still `{"item": "<id>"}` / `{"tag": "<id>"}` objects there and do not parse with the later string form.
-不支持 1.21 – 1.21.1：那时的配方 ingredient 还是 `{"item": "<id>"}` / `{"tag": "<id>"}` 对象写法，与后来的字符串写法不通用。
 
 Why three files / 为什么要分三个包：
 
@@ -103,6 +105,8 @@ The pack only overrides vanilla recipe files and the `#minecraft:mushrooms` item
 
 - Stew crafted before v1.1 keeps its old stack limit (1) and will not merge with the new stacks.
 - 1.1 之前合成的炖菜仍是原堆叠上限（1），不会与新堆叠合并。
+- 1.21 – 1.21.1 and older are out of scope: there will be no further builds for them.
+- 1.21 – 1.21.1 及更早版本不在支持范围内，后续不会再出对应构建。
 - Because the pack overrides `/data/minecraft/recipe/`, it will conflict with other packs that edit the same recipes.
 - 由于覆盖了 `/data/minecraft/recipe/`，会与其他修改同名配方的数据包冲突。
 
