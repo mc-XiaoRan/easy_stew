@@ -56,13 +56,7 @@ Suspicious stew keeps the vanilla effects, one flower per effect.
 
 ## Compatibility / 兼容性
 
-Supported range / 支持范围：**Minecraft Java Edition 1.21.2 – 26.2**。
-
-1.21 – 1.21.1 and every older version are **not supported**, and no builds will be released for them. Recipe ingredients there were still `{"item": "<id>"}` / `{"tag": "<id>"}` objects, and vanilla only shipped a single `crafting_special_suspiciousstew` recipe instead of the per-flower set, so the stack-size treatment cannot be applied cleanly.
-1.21 – 1.21.1 以及所有更早版本**不再支持**，也不会再为其发布构建。那时的配方 ingredient 还是 `{"item": "<id>"}` / `{"tag": "<id>"}` 对象写法，且原版只有一条 `crafting_special_suspiciousstew` 特殊配方、没有按花拆分的配方集，无法干净地套用本数据包的堆叠方案。
-
-Three packages ship under the same release — pick the one that matches your game version. They share the same recipe and tag structure; only the `pack.mcmeta` version declaration differs, plus the two eyeblossom recipes missing from the oldest package.
-同一个 Release 里有三个包，按游戏版本三选一。三者的配方与标签结构一致，差别只在 `pack.mcmeta` 的版本声明，以及最老那份少了两种眼眸花。
+Supported versions / 支持版本：**Minecraft Java Edition 1.21.2 – 26.2**
 
 | Minecraft Java Edition | File / 文件 | `pack.mcmeta` | Recipes / 配方 |
 | --- | --- | --- | --- |
@@ -70,22 +64,13 @@ Three packages ship under the same release — pick the one that matches your ga
 | 1.21.4 – 1.21.11 | `1.21.4-1.21.11-easy_stew.zip` | `pack_format 61` + `supported_formats 61–94` | 17 |
 | 26.1 – 26.2 | `26.1-26.2-easy_stew-1.1.zip` | `min_format 101` + `max_format [107,1]` | 18 |
 
-Why three files / 为什么要分三个包：
-
-- Recipe ingredients became plain strings in 1.21.2, so the oldest package starts there.
-- 1.21.2 起配方 ingredient 才简化为字符串，所以最老那份从 1.21.2 起。
-- The eyeblossom flowers only exist from 1.21.4, so the 1.21.2 – 1.21.3 package drops those two recipes.
-- 眼眸花从 1.21.4 才加入，所以 1.21.2 – 1.21.3 那份去掉了对应的两条配方。
-- 26.x switched to `[major, minor]` format numbers, which cannot share one `pack.mcmeta` with the old integer scheme.
-- 26.x 改用 `[主版本, 次版本]` 版本号，无法与旧的单整数写法共用一份 `pack.mcmeta`。
-
 | Item / 项目 | Value / 内容 |
 | --- | --- |
 | Loader / 加载器 | None (datapack) / 无（数据包） |
 | Works in / 可用于 | Singleplayer, LAN, dedicated servers, Realms / 单人、局域网、服务器、Realms |
 
-The pack only overrides vanilla recipe files and the `#minecraft:mushrooms` item tag, nothing else — 15 recipes on 1.21.2 – 1.21.3, 17 on 1.21.4 – 1.21.11, 18 on 26.x (golden dandelion added).
-数据包只覆盖原版配方文件和 `#minecraft:mushrooms` 物品标签，不改动其他内容——1.21.2 – 1.21.3 为 15 条配方，1.21.4 – 1.21.11 为 17 条，26.x 为 18 条（多一条金蒲公英）。
+The pack only overrides vanilla recipe files and the `#minecraft:mushrooms` item tag, nothing else.
+数据包只覆盖原版配方文件和 `#minecraft:mushrooms` 物品标签，不改动其他内容。
 
 ---
 
