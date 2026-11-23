@@ -1,8 +1,6 @@
 # Easy Stew
 
-![Minecraft Java Edition 1.21.2 – 1.21.3](https://img.shields.io/badge/Minecraft%20Java-1.21.2%20%E2%80%93%201.21.3-green)
-![Minecraft Java Edition 1.21.4 – 1.21.11](https://img.shields.io/badge/Minecraft%20Java-1.21.4%20%E2%80%93%201.21.11-green)
-![Minecraft Java Edition 26.1 – 26.2](https://img.shields.io/badge/Minecraft%20Java-26.1%20%E2%80%93%2026.2-green)
+![Minecraft Java Edition 1.21.4 – 1.21.11](https://img.shields.io/badge/Minecraft%20Java-1.21.2%20%E2%80%93%2026.2-green)
 ![Environment](https://img.shields.io/badge/environment-datapack-orange)
 ![License MIT](https://img.shields.io/badge/license-MIT-blue)
 
